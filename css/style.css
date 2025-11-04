@@ -113,6 +113,10 @@ nav ul li a:hover::after {
     color: #fff;
 }
 
+main {
+    padding-top: 80px;
+}
+
 .hero {
     background: url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
     height: 100vh;
@@ -167,50 +171,67 @@ nav ul li a:hover::after {
 
 .book-card {
     background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 1.5rem;
-    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
 .book-card img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
 
-.book-card h3 {
-    margin-bottom: 0.5rem;
+.book-card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
-.book-card p {
-    color: #666;
-    margin-bottom: 1rem;
+.book-card-content h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.book-card-content p {
+    color: #7f8c8d;
+    margin: 0 0 1.5rem 0;
+    flex-grow: 1;
 }
 
 .book-card a {
     text-decoration: none;
     color: inherit;
+    display: block;
 }
 
-.book-card button {
-    background-color: #333;
+.book-card-footer {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.book-card .btn-borrow {
+    background-color: #2c3e50;
     color: #fff;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
     cursor: pointer;
-    border-radius: 3px;
-    transition: background-color 0.3s;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
 }
 
 .book-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
-.book-card button:hover {
-    background-color: #555;
+.book-card .btn-borrow:hover {
+    background-color: #34495e;
 }
 
 .view-all-books {
