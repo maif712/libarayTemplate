@@ -6,6 +6,7 @@
     <title>Books - Dashboard</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/dashboard-sidebar.css">
     <link rel="stylesheet" href="css/dashboard-books.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
@@ -13,7 +14,14 @@
     <div class="dashboard-container">
         <aside class="sidebar">
             <div class="sidebar-header">
-                <a href="dashboard.html" class="logo"><i class="fas fa-book-open"></i> Admin</a>
+                <a href="dashboard.html" class="logo"><i class="fas fa-book-open"></i> Admin Panel</a>
+            </div>
+            <div class="admin-profile">
+                <img src="https://i.pravatar.cc/150?u=a042581f4e29026704d" alt="Admin Avatar" class="admin-avatar">
+                <div class="admin-details">
+                    <span class="admin-name">John Doe</span>
+                    <span class="admin-role">Administrator</span>
+                </div>
             </div>
             <nav class="sidebar-nav">
                 <ul>
@@ -28,10 +36,6 @@
         <main class="main-content">
             <header class="main-header">
                 <h1>Manage Books</h1>
-                <div class="admin-info">
-                    <span>Welcome, Admin</span>
-                    <i class="fas fa-user-circle"></i>
-                </div>
             </header>
             <div class="toolbar">
                 <a href="dashboard-add-book.html" class="btn-create">Create New Book</a>
