@@ -37,6 +37,35 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    position: relative;
+    padding: 5px 0;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.btn {
+    background-color: #fff;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #ddd;
 }
 
 .hero {
@@ -96,6 +125,24 @@ nav ul li a {
 }
 
 .book-card button:hover {
+    background-color: #555;
+}
+
+.view-all-books {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.view-all-books a {
+    background-color: #333;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.view-all-books a:hover {
     background-color: #555;
 }
 
