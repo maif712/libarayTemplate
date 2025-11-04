@@ -4,27 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Library Management</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <div class="dashboard-container">
         <aside class="sidebar">
             <div class="sidebar-header">
-                <h2>Dashboard</h2>
+                <a href="dashboard.html" class="logo"><i class="fas fa-book-open"></i> Admin</a>
             </div>
             <nav class="sidebar-nav">
                 <ul>
-                    <li><a href="dashboard.html" class="active">Overview</a></li>
-                    <li><a href="dashboard-books.html">Books</a></li>
-                    <li><a href="#">Members</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="index.html">Logout</a></li>
+                    <li><a href="dashboard.html" class="active"><i class="fas fa-tachometer-alt"></i> Overview</a></li>
+                    <li><a href="dashboard-books.html"><i class="fas fa-book"></i> Books</a></li>
+                    <li><a href="#"><i class="fas fa-users"></i> Members</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
                 </ul>
             </nav>
         </aside>
         <main class="main-content">
             <header class="main-header">
-                <h1>Welcome, Admin!</h1>
+                <h1>Dashboard Overview</h1>
+                <div class="admin-info">
+                    <span>Welcome, Admin</span>
+                    <i class="fas fa-user-circle"></i>
+                </div>
             </header>
             <section class="stats-cards">
                 <div class="card">

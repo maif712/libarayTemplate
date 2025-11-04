@@ -1,42 +1,52 @@
 body {
-    font-family: sans-serif;
-    margin: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f2f5;
 }
 
 .dashboard-container {
     display: flex;
+    min-height: 100vh;
 }
 
 .sidebar {
     width: 250px;
-    background-color: #333;
+    background-color: #2c3e50;
     color: #fff;
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar-header {
     padding: 1.5rem;
     text-align: center;
-    background-color: #222;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-header .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .sidebar-nav ul {
     list-style: none;
     padding: 0;
+    margin: 1rem 0;
 }
 
-.sidebar-nav li a {
-    display: block;
-    padding: 1rem 1.5rem;
-    color: #fff;
+.sidebar-nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #bdc3c7;
     text-decoration: none;
-    transition: background-color 0.3s;
+    padding: 1rem 1.5rem;
 }
 
-.sidebar-nav li a:hover,
-.sidebar-nav li a.active {
-    background-color: #555;
+.sidebar-nav ul li a:hover,
+.sidebar-nav ul li a.active {
+    background-color: #34495e;
+    color: #fff;
 }
 
 .main-content {
@@ -45,7 +55,27 @@ body {
 }
 
 .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 2rem;
+}
+
+.main-header h1 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+}
+
+.admin-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.admin-info i {
+    font-size: 1.5rem;
+    color: #2c3e50;
 }
 
 .stats-cards {
@@ -56,17 +86,20 @@ body {
 
 .card {
     background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card h3 {
-    margin-top: 0;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    color: #7f8c8d;
 }
 
 .card p {
-    font-size: 2rem;
-    font-weight: bold;
     margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2c3e50;
 }

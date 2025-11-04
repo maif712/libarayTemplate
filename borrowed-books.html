@@ -7,24 +7,25 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/user-home.css">
     <link rel="stylesheet" href="css/borrowed-books.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <a href="user-home.html">Library</a>
+                <a href="user-home.html"><i class="fas fa-book-open"></i> Library</a>
             </div>
             <ul>
-                <li><a href="user-home.html">Home</a></li>
-                <li><a href="#">Books</a></li>
-                <li><a href="borrowed-books.html">My Borrowed Books</a></li>
-                <li><span class="username">Welcome, User</span></li>
-                <li>
-                    <form action="index.html" method="post" class="logout-form">
-                        <button type="submit" class="btn">Logout</button>
-                    </form>
-                </li>
+                <li><a href="user-home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-book"></i> Books</a></li>
+                <li><a href="borrowed-books.html"><i class="fas fa-list"></i> My Borrowed Books</a></li>
             </ul>
+            <div class="auth-buttons">
+                <span class="username">Welcome, User</span>
+                <form action="index.html" method="post" class="logout-form">
+                    <button type="submit" class="btn btn-logout"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                </form>
+            </div>
         </nav>
     </header>
 

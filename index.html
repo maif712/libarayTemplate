@@ -5,28 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Management</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <a href="index.html">Library</a>
+                <a href="index.html"><i class="fas fa-book-open"></i> Library</a>
             </div>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Books</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="login.html" class="btn">Login</a></li>
-                <li><a href="register.html" class="btn">Register</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-book"></i> Books</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-login"><i class="fas fa-sign-in-alt"></i> Login</a>
+                <a href="register.html" class="btn btn-register"><i class="fas fa-user-plus"></i> Register</a>
+            </div>
         </nav>
     </header>
 
     <main>
         <section class="hero">
-            <h1>Welcome to the Library</h1>
-            <p>Find your next favorite book.</p>
+            <div class="hero-content">
+                <h1>Discover a World of Knowledge</h1>
+                <p>Explore our vast collection of books and find your next adventure.</p>
+                <a href="#" class="btn btn-hero">Explore Books</a>
+            </div>
         </section>
 
         <section class="books-grid">
