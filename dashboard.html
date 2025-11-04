@@ -24,7 +24,7 @@
             </div>
             <nav class="sidebar-nav">
                 <ul>
-                    <li><a href="dashboard.html" class="active"><i class="fas fa-tachometer-alt"></i> Overview</a></li>
+                    <li><a href="dashboard.html" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
                     <li><a href="dashboard-books.html"><i class="fas fa-book"></i> Books</a></li>
                     <li><a href="#"><i class="fas fa-users"></i> Members</a></li>
                     <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
@@ -34,23 +34,34 @@
         </aside>
         <main class="main-content">
             <header class="main-header">
-                <h1>Dashboard Overview</h1>
+                <h1>Dashboard</h1>
             </header>
-            <section class="stats-cards">
-                <div class="card">
-                    <h3>Total Books</h3>
-                    <p>1,250</p>
+            <div class="dashboard-grid">
+                <div class="grid-item chart-container">
+                    <canvas id="booksChart"></canvas>
                 </div>
-                <div class="card">
-                    <h3>Books Borrowed</h3>
-                    <p>345</p>
+                <div class="grid-item activity-feed">
+                    <h2>Recent Activity</h2>
+                    <ul>
+                        <li>John Doe borrowed "The Great Gatsby".</li>
+                        <li>Jane Smith registered as a new member.</li>
+                        <li>"To Kill a Mockingbird" was returned.</li>
+                    </ul>
                 </div>
-                <div class="card">
-                    <h3>Members</h3>
-                    <p>87</p>
+                <div class="grid-item quick-actions">
+                    <a href="dashboard-add-book.html" class="quick-action-card">
+                        <i class="fas fa-plus-circle"></i>
+                        <span>Add New Book</span>
+                    </a>
+                    <a href="#" class="quick-action-card">
+                        <i class="fas fa-user-plus"></i>
+                        <span>Add New Member</span>
+                    </a>
                 </div>
-            </section>
+            </div>
         </main>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/dashboard.js"></script>
 </body>
 </html>

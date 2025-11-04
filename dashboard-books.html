@@ -25,7 +25,7 @@
             </div>
             <nav class="sidebar-nav">
                 <ul>
-                    <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Overview</a></li>
+                    <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
                     <li><a href="dashboard-books.html" class="active"><i class="fas fa-book"></i> Books</a></li>
                     <li><a href="#"><i class="fas fa-users"></i> Members</a></li>
                     <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
@@ -36,51 +36,43 @@
         <main class="main-content">
             <header class="main-header">
                 <h1>Manage Books</h1>
+                <a href="dashboard-add-book.html" class="btn-primary"><i class="fas fa-plus"></i> Add New Book</a>
             </header>
-            <div class="toolbar">
-                <a href="dashboard-add-book.html" class="btn-create">Create New Book</a>
+            <div class="book-list">
+                <div class="book-card">
+                    <div class="book-card-info">
+                        <h3>The Great Gatsby</h3>
+                        <p>F. Scott Fitzgerald</p>
+                        <span class="status-available">Available</span>
+                    </div>
+                    <div class="book-card-actions">
+                        <a href="dashboard-edit-book.html" class="btn-edit"><i class="fas fa-edit"></i></a>
+                        <button class="btn-delete"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-card-info">
+                        <h3>To Kill a Mockingbird</h3>
+                        <p>Harper Lee</p>
+                        <span class="status-borrowed">Borrowed</span>
+                    </div>
+                    <div class="book-card-actions">
+                        <a href="dashboard-edit-book.html" class="btn-edit"><i class="fas fa-edit"></i></a>
+                        <button class="btn-delete"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-card-info">
+                        <h3>1984</h3>
+                        <p>George Orwell</p>
+                        <span class="status-available">Available</span>
+                    </div>
+                    <div class="book-card-actions">
+                        <a href="dashboard-edit-book.html" class="btn-edit"><i class="fas fa-edit"></i></a>
+                        <button class="btn-delete"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
             </div>
-            <section class="book-list-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Title</th>
-                            <th>Author</th>
-                            <th>Status</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>The Great Gatsby</td>
-                            <td>F. Scott Fitzgerald</td>
-                            <td><span class="status-available">Available</span></td>
-                            <td>
-                                <a href="dashboard-edit-book.html" class="btn-edit">Edit</a>
-                                <button class="btn-delete">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>To Kill a Mockingbird</td>
-                            <td>Harper Lee</td>
-                            <td><span class="status-borrowed">Borrowed</span></td>
-                            <td>
-                                <button class="btn-edit">Edit</button>
-                                <button class="btn-delete">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>1984</td>
-                            <td>George Orwell</td>
-                            <td><span class="status-available">Available</span></td>
-                            <td>
-                                <button class="btn-edit">Edit</button>
-                                <button class="btn-delete">Delete</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
         </main>
     </div>
 </body>
