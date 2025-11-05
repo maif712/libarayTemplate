@@ -84,10 +84,52 @@ body {
 .remember-me {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
-.remember-me input {
-    margin-right: 0.5rem;
+.remember-me input[type="checkbox"] {
+    display: none;
+}
+
+.remember-me label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.remember-me label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+.remember-me input[type="checkbox"]:checked + label:before {
+    background-color: #1368F4;
+    border-color: #1368F4;
+}
+
+.remember-me label:after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 6px;
+    height: 12px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    opacity: 0;
+}
+
+.remember-me input[type="checkbox"]:checked + label:after {
+    opacity: 1;
 }
 
 .forgot-password {
